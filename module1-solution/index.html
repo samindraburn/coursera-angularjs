@@ -15,14 +15,15 @@
      <h1>Lunch Checker</h1>
 
          <div class="form-group">
-             <input id="lunch-menu" type="text"
+             <input id="lunch-menu" type="text" style="border-color:{{fontColor}}"
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control" ng-model="items">
+             <!-- I do NOT consider and empty item, i.e., `, ,` as an item towards to the count-->
          </div>
          <div class="form-group">
              <button class="btn btn-default" ng-click="checktooMuch();">Check If Too Much</button>
          </div>
-         <div class="form-group message">
+         <div class="form-group message" style="color:{{fontColor}}"">
            {{message}}
          </div>
    </div>
