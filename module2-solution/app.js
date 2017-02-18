@@ -34,19 +34,19 @@
         quantity: 15
       },
       {
-        name: "Milk",
+        name: "Apples",
+        quantity: 5
+      },
+      {
+        name: "Water Bottles",
+        quantity: 5
+      },
+      {
+        name: "Milk Bottles",
         quantity: 20
       }
     ];
     var boughtItems = [];
-
-    // service.addToBuyItem = function (itemName, itemQuantity) {
-    //   var item = {
-    //     name: itemName,
-    //     quantity: itemQuantity
-    //   };
-    //   toBuyItems.push(item);
-    // };
 
     service.removeToBuyItem = function (itemIndex) {
       var item = toBuyItems[itemIndex];
@@ -62,18 +62,4 @@
       return boughtItems;
     };
   }
-
-// function ShoppingListServiceProvider() {
-//   var provider = this;
-//
-//   provider.defaults = {
-//     maxItems: 10
-//   };
-//
-//   provider.$get = function () {
-//     var shoppingList = new ShoppingListService(provider.defaults.maxItems);
-//
-//     return shoppingList;
-//   };
-
 })();
