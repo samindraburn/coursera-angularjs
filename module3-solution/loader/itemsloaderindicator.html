@@ -1,0 +1,18 @@
+<div>
+  <table>
+  <tr ng-if="items.length > 0">
+    <th>Name</th>
+    <th>Short Name</th>
+    <th>Description</th>
+    <th>Remove</th>
+  </tr>
+  <tr ng-repeat="item in items">
+    <td>{{item.name}}</td> <td>{{item.short_name}}</td><td>{{item.description}}</td>
+    <td>
+    <div >
+      <button class="btn btn-primary"  ng-click="onRemove({index: $index})">Don't want this one!</button>
+    </div>
+    </td>
+  </tr>
+  </table>
+</div>
